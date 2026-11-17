@@ -1,0 +1,762 @@
+{
+ "mesociclos": {
+  "1": {
+   "sesiones": {
+    "1": {
+     "titulo": "Pecho · Tríceps · Abdomen",
+     "ejercicios": [
+      {
+       "id": "e1",
+       "musculo": "Pectoral",
+       "nombre": "Apertura de pectoral en polea alta",
+       "series": 3,
+       "reps": "10-12",
+       "rir": "2-0",
+       "nota": "1 seg en contracción",
+       "descanso": "2-3 min"
+      },
+      {
+       "id": "e2",
+       "musculo": "Pectoral",
+       "nombre": "Press de banca plano con barra",
+       "series": 3,
+       "reps": "12-16",
+       "rir": "2-0",
+       "nota": "",
+       "descanso": "2-3 min"
+      },
+      {
+       "id": "e3",
+       "musculo": "Pectoral",
+       "nombre": "Press banco inclinado con mancuernas",
+       "series": 3,
+       "reps": "10-12",
+       "rir": "2-0",
+       "nota": "",
+       "descanso": "2-3 min"
+      },
+      {
+       "id": "e4",
+       "musculo": "Tríceps",
+       "nombre": "Extensión de tríceps con soga en polea alta",
+       "series": 3,
+       "reps": "10-12",
+       "rir": "2-0",
+       "nota": "",
+       "descanso": "2-3 min"
+      },
+      {
+       "id": "e5",
+       "musculo": "Tríceps",
+       "nombre": "Press francés con mancuernas",
+       "series": 3,
+       "reps": "8-10",
+       "rir": "2-0",
+       "nota": "",
+       "descanso": "2-3 min"
+      },
+      {
+       "id": "e6",
+       "musculo": "Tríceps",
+       "nombre": "Fondos en máquina",
+       "series": 3,
+       "reps": "10-12",
+       "rir": "2-0",
+       "nota": "",
+       "descanso": "2-3 min"
+      },
+      {
+       "id": "e7",
+       "musculo": "Abdomen",
+       "nombre": "Elevación de piernas recargado",
+       "series": 3,
+       "reps": "12-16",
+       "rir": "2-0",
+       "nota": "",
+       "descanso": "1-2 min"
+      }
+     ]
+    },
+    "2": {
+     "titulo": "Pierna · Cuádriceps",
+     "ejercicios": [
+      {
+       "id": "e1",
+       "musculo": "Cuádriceps",
+       "nombre": "Sentadilla hack slide",
+       "series": 4,
+       "reps": "8-10",
+       "rir": "2-0",
+       "nota": "",
+       "descanso": "2-3 min"
+      },
+      {
+       "id": "e2",
+       "musculo": "Cuádriceps",
+       "nombre": "Extensión de cuádriceps en máquina",
+       "series": 3,
+       "reps": "10-12",
+       "rir": "2-0",
+       "nota": "1 seg en contracción",
+       "descanso": "2-3 min"
+      },
+      {
+       "id": "e3",
+       "musculo": "Isquiosurales",
+       "nombre": "Curl de isquiosurales tumbado en máquina",
+       "series": 3,
+       "reps": "10-12",
+       "rir": "2-0",
+       "nota": "1 seg en contracción",
+       "descanso": "2-3 min"
+      },
+      {
+       "id": "e4",
+       "musculo": "Glúteo",
+       "nombre": "Hip thrust en máquina",
+       "series": 3,
+       "reps": "10-12",
+       "rir": "2-0",
+       "nota": "1 seg en contracción",
+       "descanso": "2-3 min"
+      },
+      {
+       "id": "e5",
+       "musculo": "Aductores",
+       "nombre": "Aducción de cadera en máquina sentado",
+       "series": 3,
+       "reps": "10-12",
+       "rir": "2-0",
+       "nota": "1 seg en contracción",
+       "descanso": "2-3 min"
+      },
+      {
+       "id": "e6",
+       "musculo": "Pantorrilla",
+       "nombre": "Elevación de talón en costurera",
+       "series": 3,
+       "reps": "10-12",
+       "rir": "2-0",
+       "nota": "1 seg en contracción",
+       "descanso": "2-3 min"
+      }
+     ]
+    },
+    "3": {
+     "titulo": "Espalda · Hombro",
+     "ejercicios": [
+      {
+       "id": "e1",
+       "musculo": "Espalda",
+       "nombre": "Pull down prono",
+       "series": 3,
+       "reps": "8-10",
+       "rir": "2-0",
+       "nota": "1 seg en contracción",
+       "descanso": "2-3 min"
+      },
+      {
+       "id": "e2",
+       "musculo": "Espalda",
+       "nombre": "Remo Gironda con agarre prono",
+       "series": 3,
+       "reps": "10-12",
+       "rir": "2-0",
+       "nota": "1 seg en contracción",
+       "descanso": "2-3 min"
+      },
+      {
+       "id": "e3",
+       "musculo": "Espalda",
+       "nombre": "Pull over en máquina",
+       "series": 3,
+       "reps": "8-10",
+       "rir": "2-0",
+       "nota": "1 seg en contracción",
+       "descanso": "2-3 min"
+      },
+      {
+       "id": "e4",
+       "musculo": "Espalda",
+       "nombre": "Remo en máquina T agarre neutro",
+       "series": 3,
+       "reps": "10-12",
+       "rir": "2-0",
+       "nota": "1 seg en contracción",
+       "descanso": "2-3 min"
+      },
+      {
+       "id": "e5",
+       "musculo": "Deltoide",
+       "nombre": "Press vertical con mancuernas",
+       "series": 3,
+       "reps": "10-12",
+       "rir": "2-0",
+       "nota": "",
+       "descanso": "2-3 min"
+      },
+      {
+       "id": "e6",
+       "musculo": "Deltoide",
+       "nombre": "Face pull con soga en polea alta",
+       "series": 3,
+       "reps": "10-12",
+       "rir": "2-0",
+       "nota": "1 seg en contracción",
+       "descanso": "2-3 min"
+      },
+      {
+       "id": "e7",
+       "musculo": "Deltoide",
+       "nombre": "Elevaciones laterales con mancuernas",
+       "series": 3,
+       "reps": "10-12",
+       "rir": "2-0",
+       "nota": "",
+       "descanso": "2-3 min"
+      },
+      {
+       "id": "e8",
+       "musculo": "Deltoide",
+       "nombre": "Extensión posterior en peck deck",
+       "series": 3,
+       "reps": "12-16",
+       "rir": "2-0",
+       "nota": "1 seg en contracción",
+       "descanso": "2-3 min"
+      }
+     ]
+    },
+    "4": {
+     "titulo": "Pecho · Bíceps · Abdomen",
+     "ejercicios": [
+      {
+       "id": "e1",
+       "musculo": "Pectoral",
+       "nombre": "Press inclinado convergente en máquina",
+       "series": 3,
+       "reps": "8-10",
+       "rir": "2-0",
+       "nota": "",
+       "descanso": "2-3 min"
+      },
+      {
+       "id": "e2",
+       "musculo": "Pectoral",
+       "nombre": "Apertura de pectoral en peck deck",
+       "series": 3,
+       "reps": "10-12",
+       "rir": "2-0",
+       "nota": "",
+       "descanso": "2-3 min"
+      },
+      {
+       "id": "e3",
+       "musculo": "Bíceps",
+       "nombre": "Curl de bíceps con soga en polea baja",
+       "series": 3,
+       "reps": "10-12",
+       "rir": "2-0",
+       "nota": "1 seg en contracción",
+       "descanso": "2-3 min"
+      },
+      {
+       "id": "e4",
+       "musculo": "Bíceps",
+       "nombre": "Curl de bíceps con mancuernas agarre neutro",
+       "series": 3,
+       "reps": "10-12",
+       "rir": "2-0",
+       "nota": "1 seg en contracción",
+       "descanso": "2-3 min"
+      },
+      {
+       "id": "e5",
+       "musculo": "Bíceps",
+       "nombre": "Curl de bíceps en banco Scott con barra EZ",
+       "series": 3,
+       "reps": "8-10",
+       "rir": "2-0",
+       "nota": "1 seg en contracción",
+       "descanso": "2-3 min"
+      },
+      {
+       "id": "e6",
+       "musculo": "Tríceps",
+       "nombre": "Extensión katana unilateral en polea baja",
+       "series": 3,
+       "reps": "10-12",
+       "rir": "2-0",
+       "nota": "",
+       "descanso": "2-3 min"
+      },
+      {
+       "id": "e7",
+       "musculo": "Bíceps",
+       "nombre": "Curl de bíceps en polea alta",
+       "series": 3,
+       "reps": "10-12",
+       "rir": "2-0",
+       "nota": "1 seg en contracción",
+       "descanso": "2-3 min"
+      },
+      {
+       "id": "e8",
+       "musculo": "Abdomen",
+       "nombre": "Crunch abdominal en máquina",
+       "series": 3,
+       "reps": "12-16",
+       "rir": "2-0",
+       "nota": "",
+       "descanso": "1-2 min"
+      }
+     ]
+    },
+    "5": {
+     "titulo": "Pierna · Femoral · Glúteo",
+     "ejercicios": [
+      {
+       "id": "e1",
+       "musculo": "Isquiosurales",
+       "nombre": "Curl de isquiosurales de pie en máquina",
+       "series": 3,
+       "reps": "8-10",
+       "rir": "2-0",
+       "nota": "1 seg en contracción",
+       "descanso": "2-3 min"
+      },
+      {
+       "id": "e2",
+       "musculo": "Isquiosurales",
+       "nombre": "Curl de isquiosurales sentado en máquina",
+       "series": 3,
+       "reps": "8-10",
+       "rir": "2-0",
+       "nota": "1 seg en contracción",
+       "descanso": "2-3 min"
+      },
+      {
+       "id": "e3",
+       "musculo": "Cuádriceps",
+       "nombre": "Press de piernas en máquina sentado",
+       "series": 3,
+       "reps": "8-10",
+       "rir": "2-0",
+       "nota": "",
+       "descanso": "2-3 min"
+      },
+      {
+       "id": "e4",
+       "musculo": "Glúteo",
+       "nombre": "Hiperextensión de cadera en banco romano",
+       "series": 3,
+       "reps": "8-10",
+       "rir": "2-0",
+       "nota": "1 seg en contracción",
+       "descanso": "2-3 min"
+      },
+      {
+       "id": "e5",
+       "musculo": "Abductores",
+       "nombre": "Abducción de cadera en máquina sentado",
+       "series": 3,
+       "reps": "10-12",
+       "rir": "2-0",
+       "nota": "1 seg en contracción",
+       "descanso": "2-3 min"
+      },
+      {
+       "id": "e6",
+       "musculo": "Pantorrilla",
+       "nombre": "Elevación de talón en press de piernas",
+       "series": 3,
+       "reps": "10-12",
+       "rir": "2-0",
+       "nota": "1 seg en contracción",
+       "descanso": "2-3 min"
+      }
+     ]
+    }
+   }
+  },
+  "2": {
+   "sesiones": {
+    "1": {
+     "titulo": "Pecho · Hombro · Tríceps",
+     "ejercicios": [
+      {
+       "id": "e1",
+       "musculo": "Pectoral",
+       "nombre": "Apertura de pectoral en polea alta",
+       "series": 3,
+       "reps": "10-12",
+       "rir": "2-0",
+       "nota": "1 seg en contracción",
+       "descanso": "2-3 min"
+      },
+      {
+       "id": "e2",
+       "musculo": "Pectoral",
+       "nombre": "Press de banca plano con barra",
+       "series": 3,
+       "reps": "12-16",
+       "rir": "2-0",
+       "nota": "",
+       "descanso": "2-3 min"
+      },
+      {
+       "id": "e3",
+       "musculo": "Pectoral",
+       "nombre": "Press banco inclinado con mancuernas",
+       "series": 3,
+       "reps": "10-12",
+       "rir": "2-0",
+       "nota": "",
+       "descanso": "2-3 min"
+      },
+      {
+       "id": "e4",
+       "musculo": "Deltoide",
+       "nombre": "Face pull con soga en polea alta",
+       "series": 3,
+       "reps": "10-12",
+       "rir": "2-0",
+       "nota": "1 seg en contracción",
+       "descanso": "2-3 min"
+      },
+      {
+       "id": "e5",
+       "musculo": "Tríceps",
+       "nombre": "Extensión de tríceps con soga en polea alta",
+       "series": 3,
+       "reps": "10-12",
+       "rir": "2-0",
+       "nota": "",
+       "descanso": "2-3 min"
+      },
+      {
+       "id": "e6",
+       "musculo": "Tríceps",
+       "nombre": "Press francés con mancuernas",
+       "series": 3,
+       "reps": "8-10",
+       "rir": "2-0",
+       "nota": "",
+       "descanso": "2-3 min"
+      },
+      {
+       "id": "e7",
+       "musculo": "Tríceps",
+       "nombre": "Fondos en máquina",
+       "series": 3,
+       "reps": "10-12",
+       "rir": "2-0",
+       "nota": "Realizarlos libres",
+       "descanso": "2-3 min"
+      }
+     ]
+    },
+    "2": {
+     "titulo": "Pierna · Cuádriceps",
+     "ejercicios": [
+      {
+       "id": "e1",
+       "musculo": "Cuádriceps",
+       "nombre": "Sentadilla hack slide",
+       "series": 4,
+       "reps": "8-10",
+       "rir": "2-0",
+       "nota": "",
+       "descanso": "2-3 min"
+      },
+      {
+       "id": "e2",
+       "musculo": "Cuádriceps",
+       "nombre": "Extensión de cuádriceps en máquina",
+       "series": 3,
+       "reps": "10-12",
+       "rir": "2-0",
+       "nota": "1 seg en contracción",
+       "descanso": "2-3 min"
+      },
+      {
+       "id": "e3",
+       "musculo": "Isquiosurales",
+       "nombre": "Curl de isquiosurales tumbado en máquina",
+       "series": 3,
+       "reps": "10-12",
+       "rir": "2-0",
+       "nota": "1 seg en contracción",
+       "descanso": "2-3 min"
+      },
+      {
+       "id": "e4",
+       "musculo": "Glúteo",
+       "nombre": "Hip thrust en máquina",
+       "series": 3,
+       "reps": "10-12",
+       "rir": "2-0",
+       "nota": "1 seg en contracción",
+       "descanso": "2-3 min"
+      },
+      {
+       "id": "e5",
+       "musculo": "Aductores",
+       "nombre": "Aducción de cadera en máquina sentado",
+       "series": 3,
+       "reps": "10-12",
+       "rir": "2-0",
+       "nota": "1 seg en contracción",
+       "descanso": "2-3 min"
+      },
+      {
+       "id": "e6",
+       "musculo": "Pantorrilla",
+       "nombre": "Elevación de talón en costurera",
+       "series": 3,
+       "reps": "10-12",
+       "rir": "2-0",
+       "nota": "1 seg en contracción",
+       "descanso": "2-3 min"
+      }
+     ]
+    },
+    "3": {
+     "titulo": "Espalda · Hombro · Tríceps",
+     "ejercicios": [
+      {
+       "id": "e1",
+       "musculo": "Espalda",
+       "nombre": "Pull down prono",
+       "series": 3,
+       "reps": "8-10",
+       "rir": "2-0",
+       "nota": "1 seg en contracción",
+       "descanso": "2-3 min"
+      },
+      {
+       "id": "e2",
+       "musculo": "Espalda",
+       "nombre": "Remo Gironda con agarre prono",
+       "series": 3,
+       "reps": "10-12",
+       "rir": "2-0",
+       "nota": "1 seg en contracción",
+       "descanso": "2-3 min"
+      },
+      {
+       "id": "e3",
+       "musculo": "Espalda",
+       "nombre": "Pull over en máquina",
+       "series": 3,
+       "reps": "8-10",
+       "rir": "2-0",
+       "nota": "1 seg en contracción",
+       "descanso": "2-3 min"
+      },
+      {
+       "id": "e4",
+       "musculo": "Espalda",
+       "nombre": "Remo en máquina T agarre neutro",
+       "series": 3,
+       "reps": "10-12",
+       "rir": "2-0",
+       "nota": "1 seg en contracción",
+       "descanso": "2-3 min"
+      },
+      {
+       "id": "e5",
+       "musculo": "Deltoide",
+       "nombre": "Press vertical con mancuernas",
+       "series": 3,
+       "reps": "10-12",
+       "rir": "2-0",
+       "nota": "",
+       "descanso": "2-3 min"
+      },
+      {
+       "id": "e6",
+       "musculo": "Deltoide",
+       "nombre": "Face pull con soga en polea alta",
+       "series": 3,
+       "reps": "10-12",
+       "rir": "2-0",
+       "nota": "1 seg en contracción",
+       "descanso": "2-3 min"
+      },
+      {
+       "id": "e7",
+       "musculo": "Deltoide",
+       "nombre": "Elevaciones laterales con mancuernas",
+       "series": 3,
+       "reps": "10-12",
+       "rir": "2-0",
+       "nota": "",
+       "descanso": "2-3 min"
+      },
+      {
+       "id": "e8",
+       "musculo": "Tríceps",
+       "nombre": "Extensión katana unilateral en polea baja",
+       "series": 3,
+       "reps": "12-16",
+       "rir": "2-0",
+       "nota": "",
+       "descanso": "2-3 min"
+      }
+     ]
+    },
+    "4": {
+     "titulo": "Pecho · Bíceps · Abdomen",
+     "ejercicios": [
+      {
+       "id": "e1",
+       "musculo": "Pectoral",
+       "nombre": "Press inclinado convergente en máquina",
+       "series": 3,
+       "reps": "8-10",
+       "rir": "2-0",
+       "nota": "",
+       "descanso": "2-3 min"
+      },
+      {
+       "id": "e2",
+       "musculo": "Pectoral",
+       "nombre": "Apertura de pectoral en peck deck",
+       "series": 3,
+       "reps": "10-12",
+       "rir": "2-0",
+       "nota": "",
+       "descanso": "2-3 min"
+      },
+      {
+       "id": "e3",
+       "musculo": "Bíceps",
+       "nombre": "Curl de bíceps con soga en polea baja",
+       "series": 3,
+       "reps": "10-12",
+       "rir": "2-0",
+       "nota": "1 seg en contracción",
+       "descanso": "2-3 min"
+      },
+      {
+       "id": "e4",
+       "musculo": "Bíceps",
+       "nombre": "Curl de bíceps con mancuernas agarre neutro",
+       "series": 3,
+       "reps": "10-12",
+       "rir": "2-0",
+       "nota": "1 seg en contracción",
+       "descanso": "2-3 min"
+      },
+      {
+       "id": "e5",
+       "musculo": "Bíceps",
+       "nombre": "Curl de bíceps en banco Scott con barra EZ",
+       "series": 3,
+       "reps": "8-10",
+       "rir": "2-0",
+       "nota": "1 seg en contracción",
+       "descanso": "2-3 min"
+      },
+      {
+       "id": "e6",
+       "musculo": "Bíceps",
+       "nombre": "Curl de bíceps bayesian",
+       "series": 3,
+       "reps": "10-12",
+       "rir": "2-0",
+       "nota": "",
+       "descanso": "2-3 min"
+      },
+      {
+       "id": "e7",
+       "musculo": "Abdomen",
+       "nombre": "Crunch abdominal en máquina",
+       "series": 3,
+       "reps": "12-16",
+       "rir": "2-0",
+       "nota": "",
+       "descanso": "1-2 min"
+      },
+      {
+       "id": "e8",
+       "musculo": "Abdomen",
+       "nombre": "Crunch abdominal en banco declinado",
+       "series": 3,
+       "reps": "12-16",
+       "rir": "2-0",
+       "nota": "",
+       "descanso": "1-2 min"
+      }
+     ]
+    },
+    "5": {
+     "titulo": "Pierna · Femoral · Glúteo",
+     "ejercicios": [
+      {
+       "id": "e1",
+       "musculo": "Isquiosurales",
+       "nombre": "Curl de isquiosurales tumbado en máquina",
+       "series": 3,
+       "reps": "8-10",
+       "rir": "2-0",
+       "nota": "1 seg en contracción",
+       "descanso": "2-3 min"
+      },
+      {
+       "id": "e2",
+       "musculo": "Isquiosurales",
+       "nombre": "Curl de isquiosurales sentado en máquina",
+       "series": 3,
+       "reps": "8-10",
+       "rir": "2-0",
+       "nota": "1 seg en contracción",
+       "descanso": "2-3 min"
+      },
+      {
+       "id": "e3",
+       "musculo": "Cuádriceps",
+       "nombre": "Press de piernas en máquina sentado",
+       "series": 3,
+       "reps": "8-10",
+       "rir": "2-0",
+       "nota": "",
+       "descanso": "2-3 min"
+      },
+      {
+       "id": "e4",
+       "musculo": "Glúteo",
+       "nombre": "Hiperextensión de cadera en banco romano",
+       "series": 3,
+       "reps": "8-10",
+       "rir": "2-0",
+       "nota": "1 seg en contracción",
+       "descanso": "2-3 min"
+      },
+      {
+       "id": "e5",
+       "musculo": "Abductores",
+       "nombre": "Abducción de cadera en máquina sentado",
+       "series": 3,
+       "reps": "10-12",
+       "rir": "2-0",
+       "nota": "1 seg en contracción",
+       "descanso": "2-3 min"
+      },
+      {
+       "id": "e6",
+       "musculo": "Pantorrilla",
+       "nombre": "Elevación de talón en máquina de pie",
+       "series": 3,
+       "reps": "10-12",
+       "rir": "2-0",
+       "nota": "Realizarlo en sentadilla perfecta",
+       "descanso": "2-3 min"
+      }
+     ]
+    }
+   }
+  }
+ }
+}

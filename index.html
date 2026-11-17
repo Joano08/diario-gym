@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Diario Gym</title>
+<meta name="description" content="Diario de entrenamiento: registra tus sesiones del gym, con o sin internet.">
+<meta name="theme-color" content="#0d1b3a">
+<meta name="mobile-web-app-capable" content="yes">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="iconos/icono-192.png">
+<link rel="apple-touch-icon" href="iconos/icono-192.png">
+<link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+<header class="top"><div class="wrap">
+  <div><h1>Diario Gym</h1><div class="sub">S&amp;H Conditioning System</div></div>
+  <button class="hbtn" id="btnRespaldo" type="button" aria-label="Respaldo y ajustes">
+    <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 3v12m0 0l-4-4m4 4l4-4M4 17v2a2 2 0 002 2h12a2 2 0 002-2v-2"/></svg>
+    <span>Respaldo</span><i class="dot" id="dotRespaldo" hidden></i>
+  </button>
+</div></header>
+
+<main class="wrap" id="main">
+
+  <!-- ENTRENAR -->
+  <section id="v-entrenar">
+    <div class="aviso" id="avisoRespaldo" hidden></div>
+    <div class="card" id="bienvenida" hidden>
+      <h3>Bienvenido</h3>
+      <p>Si ya tienes un archivo con tu historial o un respaldo, impórtalo para no empezar de cero.</p>
+      <div class="row">
+        <button class="btn" type="button" id="bvImportar">Importar mi historial</button>
+        <button class="btn ghost" type="button" id="bvCero">Empezar de cero</button>
+      </div>
+    </div>
+    <div class="controls">
+      <div class="chips" id="mesoChips"></div>
+      <div class="row">
+        <label class="f">Semana<select id="semana"></select></label>
+        <label class="f">Fecha<input type="date" id="fecha"></label>
+      </div>
+      <div class="chips" id="sesChips"></div>
+      <p class="focus" id="focus"></p>
+      <p class="tip" id="tipSemana"></p>
+      <p class="done" id="estado" hidden></p>
+    </div>
+    <div id="exList" class="lista"></div>
+    <label class="f">Notas de la sesión<textarea id="notas" placeholder="Cómo te sentiste, molestias, cambios de máquina…"></textarea></label>
+    <button class="link peligro" type="button" id="borrar" hidden>Borrar este registro</button>
+    <div class="savebar">
+      <div class="timer" id="timer" hidden>
+        <div class="t-main"><b id="tReloj">0:00</b><span id="tTxt">Descansando</span></div>
+        <div class="t-bar"><i id="tFill"></i><u id="tMark"></u></div>
+        <button type="button" class="t-x" id="tStop" aria-label="Detener descanso">Detener</button>
+      </div>
+      <div class="saverow"><button class="btn" id="guardar" type="button">Guardar sesión</button><span class="msg" id="msg" role="status"></span></div>
+    </div>
+  </section>
+
+  <!-- HISTORIAL -->
+  <section id="v-historial" hidden>
+    <div id="histList" class="lista"></div>
+  </section>
+
+  <!-- PROGRESO -->
+  <section id="v-progreso" hidden>
+    <div class="card">
+      <h3 id="constTit">Constancia</h3>
+      <div id="constancia"></div>
+    </div>
+    <div class="card">
+      <h3>Resumen para mi nutrióloga y coach</h3>
+      <p class="last">Arma un texto en dos partes, listo para mandar por WhatsApp: la de nutrición (peso, composición, pasos y sueño) y la de entrenamiento (sesiones, fuerza y cada ejercicio). Puedes corregirlo o agregarle algo antes de enviarlo.</p>
+      <div class="row">
+        <label class="f">Qué mandar<select id="resTipo">
+          <option value="todo">Completo</option>
+          <option value="nutri">Solo nutrición</option>
+          <option value="entreno">Solo entrenamiento</option>
+        </select></label>
+        <label class="f">Periodo<select id="resPer"></select></label>
+      </div>
+      <div class="checks">
+        <label class="ck"><input type="checkbox" id="rsPeso" checked><span>Peso y composición</span></label>
+        <label class="ck"><input type="checkbox" id="rsEntreno" checked><span>Entrenamientos</span></label>
+        <label class="ck"><input type="checkbox" id="rsFuerza" checked><span>Fuerza</span></label>
+        <label class="ck"><input type="checkbox" id="rsDetalle" checked><span>Detalle por ejercicio</span></label>
+        <label class="ck"><input type="checkbox" id="rsReloj" checked><span>Pasos y sueño</span></label>
+        <label class="ck"><input type="checkbox" id="rsNotas" checked><span>Cómo me sentí</span></label>
+      </div>
+      <div class="row"><button class="btn" id="resArmar" type="button">Armar resumen</button></div>
+      <div id="resCaja" class="lista" hidden>
+        <textarea id="resTxt" rows="14" aria-label="Texto del resumen"></textarea>
+        <div class="row">
+          <button class="btn" id="resCopiar" type="button">Copiar</button>
+          <button class="btn ghost" id="resCompartir" type="button" hidden>Compartir</button>
+        </div>
+        <div class="msg" id="resMsg" role="status"></div>
+      </div>
+    </div>
+    <div class="card">
+      <h3>Peso corporal</h3>
+      <div class="row">
+        <label class="f">Fecha<input type="date" id="pFecha"></label>
+        <label class="f">Kg<input type="text" id="pKg" inputmode="decimal" class="corto"></label>
+        <button class="btn" id="pGuardar" type="button">Anotar</button>
+      </div>
+      <div class="chartbox" id="pChart"></div>
+      <div id="pTabla"></div>
+    </div>
+    <div class="card">
+      <h3>Fuerza por ejercicio</h3>
+      <label class="f">Ejercicio<select id="exSel"></select></label>
+      <div class="stats" id="exStats"></div>
+      <div class="chartbox" id="exChart"></div>
+      <div id="exTabla"></div>
+    </div>
+  </section>
+
+  <!-- RELOJ -->
+  <section id="v-reloj" hidden>
+    <p class="last" id="rUpd">Aquí aparecen tus pasos, sueño y composición corporal del Galaxy Watch cuando importes la exportación de Samsung Health.</p>
+    <div class="card"><h3>Pasos</h3><div class="stats" id="rPasosSt"></div><div class="chartbox" id="rPasos"></div></div>
+    <div class="card"><h3>Sueño</h3><div class="stats" id="rSuenoSt"></div><div class="chartbox" id="rSueno"></div></div>
+    <div class="card"><h3>Pulso en reposo (durmiendo)</h3><p class="last">Mientras más bajo, mejor condición cardiovascular. Lo mide el reloj cada noche.</p><div class="chartbox" id="rFc"></div></div>
+    <div class="card"><h3>Composición corporal</h3><div id="rComp"></div></div>
+    <div class="card">
+      <h3>Actualizar datos del reloj</h3>
+      <p class="last">En Samsung Health: Ajustes → Descargar datos personales. Luego elige aquí los archivos .csv de pasos (step_daily_trend), sueño (sleep), peso (weight) y vitality_score. Puedes elegir varios a la vez.</p>
+      <div class="row"><button class="btn ghost" type="button" id="csvBtn">Elegir archivos .csv</button></div>
+      <input type="file" id="csvFile" accept=".csv,text/csv,text/comma-separated-values" multiple hidden>
+      <div id="csvMsg" class="last"></div>
+    </div>
+  </section>
+
+  <!-- PROGRAMA -->
+  <section id="v-programa" hidden>
+    <div class="card rules">
+      <h3>Cómo va el mesociclo</h3>
+      <div class="weeks">
+        <div><b>Semana 1</b>Familiarízate con los ejercicios y anota dudas.</div>
+        <div><b>Semana 2</b>Lleva la última serie de cada ejercicio al fallo real para conocerlo.</div>
+        <div><b>Semanas 3–5</b>Progresa en RIR, reps, peso, tiempo bajo tensión y técnica.</div>
+        <div><b>Semana 6</b>Descarga: confírmala con tu coach.</div>
+      </div>
+    </div>
+    <div class="card rules">
+      <h3>Reglas del programa</h3>
+      <p><strong>RIR</strong>Repeticiones que te quedan antes del fallo. RIR 2-0 significa terminar cada serie con 2, 1 o 0 reps en reserva.</p>
+      <p><strong>Descanso</strong>2–3 min entre series (abdomen 1–2 min). Si te recuperas muy rápido, el RIR no fue real.</p>
+      <p><strong>Calentamiento</strong>5 min de cardio y luego estiramientos dinámicos, 2–3 series de 15–20 reps por músculo.</p>
+      <p><strong>Pasos</strong>12,000 a 14,000 al día, también en días de descanso, aparte del cardio.</p>
+      <p><strong>Sueño</strong>Mínimo 7 horas; lo óptimo es 8 a 9.</p>
+    </div>
+    <div class="card">
+      <h3>Tus mesociclos</h3>
+      <div id="progVista"></div>
+    </div>
+    <div class="card">
+      <h3>Agregar un mesociclo nuevo</h3>
+      <p class="last">Pega aquí el texto (JSON) que te manden con el mesociclo nuevo, o elige el archivo. Tus registros anteriores no se tocan.</p>
+      <textarea id="mesoTxt" class="mono" placeholder='{ "mesociclos": { "3": { "sesiones": { … } } } }'></textarea>
+      <div class="row">
+        <button class="btn" type="button" id="mesoAdd">Agregar mesociclo</button>
+        <button class="btn ghost" type="button" id="mesoFileBtn">Elegir archivo</button>
+      </div>
+      <input type="file" id="mesoFile" accept=".json,.txt,application/json,text/plain" hidden>
+      <div id="mesoMsg" class="msg" role="status"></div>
+      <details class="det"><summary>Ver ejemplo del formato</summary><pre id="mesoEj" class="mono"></pre></details>
+    </div>
+  </section>
+
+  <!-- RESPALDO Y AJUSTES -->
+  <section id="v-respaldo" hidden>
+    <div class="card">
+      <h3>Respaldo</h3>
+      <p id="resEstado" class="last"></p>
+      <p class="last">Tus datos viven solo en este celular. El respaldo es un archivo con todo (entrenos, peso, reloj y programa) para que no pierdas nada si cambias de celular o borras la app. Guárdalo en Google Drive o mándatelo por WhatsApp.</p>
+      <div class="row">
+        <button class="btn" type="button" id="expBtn">Descargar respaldo</button>
+        <button class="btn ghost" type="button" id="shareBtn" hidden>Compartir respaldo</button>
+      </div>
+      <div id="expMsg" class="msg" role="status"></div>
+    </div>
+    <div class="card">
+      <h3>Recuperar un respaldo</h3>
+      <p class="last">Elige un archivo de respaldo (o tu historial.json original). Reemplaza lo que hay en este celular, así que te pediré confirmar antes.</p>
+      <div class="row"><button class="btn ghost" type="button" id="impBtn">Elegir archivo</button></div>
+      <input type="file" id="impFile" accept=".json,.txt,application/json,text/plain" hidden>
+      <div id="impMsg" class="msg" role="status"></div>
+    </div>
+    <div class="card">
+      <h3>Ajustes</h3>
+      <label class="sw"><input type="checkbox" id="ajDescanso"><span><b>Cronómetro de descanso automático</b>Empieza a contar cuando anotas las reps de una serie.</span></label>
+      <label class="sw"><input type="checkbox" id="ajSonido"><span><b>Avisar con sonido y vibración</b>Cuando ya cumpliste el descanso mínimo y el máximo.</span></label>
+      <label class="sw"><input type="checkbox" id="ajPantalla"><span><b>Mantener la pantalla encendida</b>Mientras estás anotando tu entrenamiento.</span></label>
+    </div>
+    <p class="last" id="verInfo"></p>
+  </section>
+</main>
+
+<nav class="tabs" aria-label="Secciones"><div class="tabs-in" role="tablist">
+  <button role="tab" data-tab="entrenar" aria-selected="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 10v4M6 7v10M18 7v10M21 10v4M6 12h12"/></svg><span>Entrenar</span></button>
+  <button role="tab" data-tab="historial" aria-selected="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h14v17H5zM9 9h6M9 13h6M9 17h3"/></svg><span>Historial</span></button>
+  <button role="tab" data-tab="progreso" aria-selected="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19h16M5 15l4-5 4 3 6-8"/></svg><span>Progreso</span></button>
+  <button role="tab" data-tab="reloj" aria-selected="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 3h6l1 4H8zM8 17h8l-1 4H9zM7 7h10v10H7zM12 10v2.5l1.5 1"/></svg><span>Reloj</span></button>
+  <button role="tab" data-tab="programa" aria-selected="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 6h12M8 12h12M8 18h12M4 6h.01M4 12h.01M4 18h.01"/></svg><span>Programa</span></button>
+</div></nav>
+
+<div class="toast" id="toast" role="status" hidden></div>
+
+<script src="js/datos.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
